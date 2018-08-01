@@ -83,14 +83,6 @@ class Debit extends \Magento\Payment\Model\Method\AbstractMethod
             ]
         );
 
-        /*
-        if ($checkResult->getData('is_available')){
-            $this->_messageManager->addNotice("Lastschrift geht");
-        } else {
-            $this->_messageManager->addNotice("Lastschrift geht NICHT");
-        }
-        */
-
         return $checkResult->getData('is_available');
     }
 }
